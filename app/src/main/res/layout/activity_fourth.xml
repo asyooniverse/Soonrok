@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0ECE4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="순간 추억하기"
+        android:textSize="35dp"
+        android:fontFamily="@font/kangwon2"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <View
+        android:layout_height="3dp"
+        android:layout_width="match_parent"
+        android:background="#D5D5D5"/>
+
+    <LinearLayout
+        android:background="#F7F2E7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/animaTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:lines="1"
+            android:background="@null"
+            android:fontFamily="@font/kangwon2"
+            android:textSize="35dp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/animaContent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fontFamily="@font/kangwon2"
+            android:gravity="top"
+            android:hint="Content"
+            android:lines="6"
+            android:textSize="25dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:numStars="5"
+            android:isIndicator = "false"
+            android:rating="0.5"
+            android:progressTint="#797A7E"
+            android:progressBackgroundTint="#858585"
+            style="?android:ratingBarStyleIndicator"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="4dp"
+        android:layout_width="match_parent"
+        android:background="#D5D5D5"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이전"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/kangwon2"
+            android:textSize="20dp"
+            android:backgroundTint="#D8D3CD"
+            android:textColor="#797A7E"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:fontFamily="@font/kangwon2"
+            android:textSize="20dp"
+            android:backgroundTint="#D8D3CD"
+            android:textColor="#797A7E"
+            android:textStyle="bold"/>
+
+    </GridLayout>
+
+</LinearLayout>
